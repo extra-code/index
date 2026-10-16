@@ -47,12 +47,12 @@
       "observed": "2026-09-02T21:36:35Z"
     },
     "2026": {
-      "content": "sha256:fcddd2ec0f0d9f0b97261a525df9bd4351416c1aef6901b73bb6e6d8edfcd68d",
-      "observed": "2026-10-14T13:08:13Z"
+      "content": "sha256:620b47987445b11bde59837d9193d858cfe9b9d7d85745ec746d30d78010a447",
+      "observed": "2026-10-16T22:15:20Z"
     },
     "latest": {
-      "content": "sha256:fcddd2ec0f0d9f0b97261a525df9bd4351416c1aef6901b73bb6e6d8edfcd68d",
-      "observed": "2026-10-14T13:08:13Z"
+      "content": "sha256:620b47987445b11bde59837d9193d858cfe9b9d7d85745ec746d30d78010a447",
+      "observed": "2026-10-16T22:15:20Z"
     },
     "2026.8.1_20260803": {
       "content": "sha256:2f96daa5fd73c755a8c2039e4ad759b203a6614810e4062c5b5311b96a278301",
@@ -339,8 +339,8 @@
       "observed": "2026-10-02T07:33:00Z"
     },
     "2026.10": {
-      "content": "sha256:fcddd2ec0f0d9f0b97261a525df9bd4351416c1aef6901b73bb6e6d8edfcd68d",
-      "observed": "2026-10-14T13:08:13Z"
+      "content": "sha256:620b47987445b11bde59837d9193d858cfe9b9d7d85745ec746d30d78010a447",
+      "observed": "2026-10-16T22:15:20Z"
     },
     "2026.10.1_20261003": {
       "content": "sha256:37d0e26137bc6fddfad2e56bc8c02b0088cc841e2851364cb98c2b07489ec84d",
@@ -421,6 +421,22 @@
     "2026.10.10": {
       "content": "sha256:fcddd2ec0f0d9f0b97261a525df9bd4351416c1aef6901b73bb6e6d8edfcd68d",
       "observed": "2026-10-14T13:08:13Z"
+    },
+    "2026.10.11_20261015": {
+      "content": "sha256:34e6de7852fb4532b2d882922ab10337ad06794555453b0f87a1468db11579a7",
+      "observed": "2026-10-15T12:54:46Z"
+    },
+    "2026.10.11": {
+      "content": "sha256:34e6de7852fb4532b2d882922ab10337ad06794555453b0f87a1468db11579a7",
+      "observed": "2026-10-15T12:54:46Z"
+    },
+    "2026.10.12_20261016": {
+      "content": "sha256:620b47987445b11bde59837d9193d858cfe9b9d7d85745ec746d30d78010a447",
+      "observed": "2026-10-16T22:15:20Z"
+    },
+    "2026.10.12": {
+      "content": "sha256:620b47987445b11bde59837d9193d858cfe9b9d7d85745ec746d30d78010a447",
+      "observed": "2026-10-16T22:15:20Z"
     }
   }
 }
