@@ -325,7 +325,7 @@ discover_root() {
   # /data/catalog/index.json once WP2-F's render pipeline ships it.
   if [[ -d "${REPO_ROOT}/p" ]]; then
     local sample
-    sample=$(find "${REPO_ROOT}/p" -mindepth 2 -maxdepth 2 -type f -name '*.json' 2>/dev/null | sort | head -n1)
+    sample=$(find "${REPO_ROOT}/p" -mindepth 2 -maxdepth 2 -type f -name '*.json' 2>/dev/null | sort | sed -n 1p)
     if [[ -n "$sample" ]]; then
       ROOT_PKG=${sample#"${REPO_ROOT}"/p/}
       ROOT_PKG=${ROOT_PKG%.json}
