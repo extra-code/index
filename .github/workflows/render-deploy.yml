@@ -135,12 +135,13 @@ jobs:
       # Swapping the two steps silently deletes those files on the next
       # deploy -- see taskfile.yml's render:build target, which encodes
       # this order, not this workflow directly.
-      # Base / for index.ocx.sh. Its HTML moves to ocx.sh/catalog/ (the
-      # deploy-ocx-sh job) and this tree keeps serving it until a Cloudflare
-      # rule redirects index.ocx.sh's HTML paths there; the JSON wire paths
+      # Base / and the catalog's own header for index.ocx.sh: the ocx.sh
+      # shell's root-relative links would land on this host. The HTML stays
+      # here until a Cloudflare rule redirects index.ocx.sh's HTML paths to
+      # ocx.sh/catalog/; the JSON wire paths
       # stay here for good, the ocx CLI dials them.
       - name: task render:build
-        run: task render:build SITE_URL=https://index.ocx.sh
+        run: task render:build CONFIG_OVERLAY=catalog.index-ocx-sh.json
       - name: task schema:validate:rendered
         run: task schema:validate:rendered
 
