@@ -10,11 +10,172 @@
   "status": "active",
   "deprecated_message": null,
   "created": "2026-10-23",
-  "desc": null,
+  "desc": {
+    "digest": "sha256:a2bd0dc18b7bbb92d83641fee766918b1d9703b0c728192ef8687f99f87d8ea1",
+    "title": "pipx",
+    "description": "Install and run Python applications in isolated environments",
+    "keywords": [
+      "python",
+      "pypa",
+      "cli",
+      "install",
+      "virtualenv",
+      "isolation",
+      "packaging",
+      "pipx"
+    ],
+    "readme": "sha256:32991a04e7dd365173113e05c4491918df7d08adca6c612b5a546ba923c60659",
+    "logo": "sha256:f074abf3fecba27bd353ba671587bb1014b143cc32748929ff5b05b1f0e36e12"
+  },
   "upstream": {
     "org": "pypa",
     "repository_url": "https://github.com/pypa/pipx",
     "disclaimer": "Unaffiliated mirror. pipx is a project of the Python Packaging Authority; this OCX package republishes upstream PyPI releases and is not endorsed by them."
   },
-  "tags": {}
+  "tags": {
+    "1.17.12_20261023": {
+      "content": "sha256:5ebb8b59fc85329310a9d37532aee7c59679b923b1b6d827e6996ed4dd9a631b",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.12": {
+      "content": "sha256:5ebb8b59fc85329310a9d37532aee7c59679b923b1b6d827e6996ed4dd9a631b",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17": {
+      "content": "sha256:49f7bd1ed6740e518ee74d2f5c635f8f1a2e927e53e811aefc88e8279ad917cd",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1": {
+      "content": "sha256:a6232035532cfdd495de333af1f0b88ef4890eba5ed465b2b651b494afc57182",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "latest": {
+      "content": "sha256:a6232035532cfdd495de333af1f0b88ef4890eba5ed465b2b651b494afc57182",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.13_20261023": {
+      "content": "sha256:75e7b378cbedc0c9de016ba587bd3578dbb899594ffddd339fcc2b8edaf01d2a",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.13": {
+      "content": "sha256:75e7b378cbedc0c9de016ba587bd3578dbb899594ffddd339fcc2b8edaf01d2a",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.14_20261023": {
+      "content": "sha256:49f7bd1ed6740e518ee74d2f5c635f8f1a2e927e53e811aefc88e8279ad917cd",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.14": {
+      "content": "sha256:49f7bd1ed6740e518ee74d2f5c635f8f1a2e927e53e811aefc88e8279ad917cd",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.18.0_20261023": {
+      "content": "sha256:62268bcf9f7ed8c2be8e8e6a2b0eeae9258ffdc3495237d1037e684810f9a841",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.18.0": {
+      "content": "sha256:62268bcf9f7ed8c2be8e8e6a2b0eeae9258ffdc3495237d1037e684810f9a841",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.18": {
+      "content": "sha256:a6232035532cfdd495de333af1f0b88ef4890eba5ed465b2b651b494afc57182",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.18.1_20261023": {
+      "content": "sha256:f056bfcc6858af11e5c32a9dee62193220cb6fb3eda1b6daff9474414c4e75ef",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.18.1": {
+      "content": "sha256:f056bfcc6858af11e5c32a9dee62193220cb6fb3eda1b6daff9474414c4e75ef",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.18.2_20261023": {
+      "content": "sha256:5d04efc86f95530c7e1611058da58f1f7a05dec19ce5cc2516ac12008adf06f3",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.18.2": {
+      "content": "sha256:5d04efc86f95530c7e1611058da58f1f7a05dec19ce5cc2516ac12008adf06f3",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.18.3_20261023": {
+      "content": "sha256:1a0f01f8181ab50aa10de34a1a7594b3921587f58698d1c04a70563f67604028",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.18.3": {
+      "content": "sha256:1a0f01f8181ab50aa10de34a1a7594b3921587f58698d1c04a70563f67604028",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.18.4_20261023": {
+      "content": "sha256:a6232035532cfdd495de333af1f0b88ef4890eba5ed465b2b651b494afc57182",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.18.4": {
+      "content": "sha256:a6232035532cfdd495de333af1f0b88ef4890eba5ed465b2b651b494afc57182",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.4_20261023": {
+      "content": "sha256:eec9aa72c164a940cc6ab9fbf0f44d4737fb0b4d446254c1fb3d44c2d9573fb4",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.4": {
+      "content": "sha256:eec9aa72c164a940cc6ab9fbf0f44d4737fb0b4d446254c1fb3d44c2d9573fb4",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.5_20261023": {
+      "content": "sha256:564d4c970339d767f71015a2c97fe969504e91ceb6cad73c76ef4a791525c3f0",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.5": {
+      "content": "sha256:564d4c970339d767f71015a2c97fe969504e91ceb6cad73c76ef4a791525c3f0",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.6_20261023": {
+      "content": "sha256:9448ad631cfa84c56506ac08dabb70675e4b70cae0edae9bc5354ca9b10274f6",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.6": {
+      "content": "sha256:9448ad631cfa84c56506ac08dabb70675e4b70cae0edae9bc5354ca9b10274f6",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.7_20261023": {
+      "content": "sha256:d0bccc98377374e7847c4c2ac68e32385c7087a337fb5bea6c9590c595fe79d6",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.7": {
+      "content": "sha256:d0bccc98377374e7847c4c2ac68e32385c7087a337fb5bea6c9590c595fe79d6",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.8_20261023": {
+      "content": "sha256:70b4147290e407827445f12d5a4eb3a095f0d93b957aa5331d6e8cabf75c6db8",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.8": {
+      "content": "sha256:70b4147290e407827445f12d5a4eb3a095f0d93b957aa5331d6e8cabf75c6db8",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.9_20261023": {
+      "content": "sha256:c9b1e75a20bf7a527e501de57b2e3f7d541905d01155b43634c270d01dea5815",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.9": {
+      "content": "sha256:c9b1e75a20bf7a527e501de57b2e3f7d541905d01155b43634c270d01dea5815",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.10_20261023": {
+      "content": "sha256:3af727b94a309386582c8f4b27291a3f2689da23f23986a8aea4883e6c54c3c1",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.10": {
+      "content": "sha256:3af727b94a309386582c8f4b27291a3f2689da23f23986a8aea4883e6c54c3c1",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.11_20261023": {
+      "content": "sha256:483676533c511682f010611cb6c64adda8fc13c58c438409e43e721c56e28599",
+      "observed": "2026-10-23T06:25:13Z"
+    },
+    "1.17.11": {
+      "content": "sha256:483676533c511682f010611cb6c64adda8fc13c58c438409e43e721c56e28599",
+      "observed": "2026-10-23T06:25:13Z"
+    }
+  }
 }
