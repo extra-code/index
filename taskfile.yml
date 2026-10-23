@@ -24,11 +24,11 @@ includes:
 vars:
   RENDER_OUT: dist
   RENDER_INDEX_DIR: ""
-  # Overrides catalog.config.json's siteUrl, and with it the catalog's
-  # `base`. Empty keeps https://ocx.sh/catalog/ (base /catalog/, the Bunny
-  # deploy); render-deploy.yml sets https://index.ocx.sh (base /) for the
-  # Cloudflare Pages tree until index.ocx.sh's HTML paths redirect.
-  SITE_URL: '{{.SITE_URL | default ""}}'
+  # A JSON file merged over catalog.config.json. Empty keeps the ocx.sh
+  # build (base /catalog/, the shared ocx chrome, the Bunny deploy);
+  # render-deploy.yml passes catalog.index-ocx-sh.json for the Cloudflare
+  # Pages tree at index.ocx.sh (base /, its own header and footer).
+  CONFIG_OVERLAY: '{{.CONFIG_OVERLAY | default ""}}'
   # Renderer switch: released npm package (default -- CI/deploys, always)
   # or the sibling checkout via CATALOG_DEV=1 (task CLI or .env.local; the
   # self-default pattern lets the env value through, a plain literal would
@@ -153,8 +153,8 @@ tasks:
       - bun install --frozen-lockfile
       - >-
         jq --arg path '{{if .RENDER_INDEX_DIR}}{{.RENDER_INDEX_DIR}}{{else}}.{{end}}'
-        --arg url '{{.SITE_URL}}'
-        '.sources[0].path = $path | if $url != "" then .siteUrl = $url else . end'
+        --slurpfile overlay '{{.CONFIG_OVERLAY | default "/dev/null"}}'
+        '.sources[0].path = $path | . * ($overlay[0] // {})'
         catalog.config.json > .catalog.config.render.json
       - '{{.CATALOG_BIN}} build --config .catalog.config.render.json --out {{.RENDER_OUT}}'
 

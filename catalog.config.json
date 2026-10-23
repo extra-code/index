@@ -6,35 +6,14 @@
       "root": true
     }
   ],
-  "brand": {
-    "title": "OCX Index",
-    "wordmark": "index.ocx.sh"
-  },
   "siteUrl": "https://ocx.sh/catalog/",
   "description": "Package catalog and wire-format docs for the OCX public index (index.ocx.sh).",
   "favicon": "/favicon.svg",
-  "nav": [
-    {
-      "text": "github",
-      "link": "https://github.com/ocx-sh/index"
-    }
-  ],
-  "footer": {
-    "links": [
-      {
-        "text": "privacy",
-        "link": "/docs/privacy"
-      },
-      {
-        "text": "github",
-        "link": "https://github.com/ocx-sh/index"
-      }
-    ]
-  },
   "docs": "./site/src/docs",
   "publicDir": "./site/src/public",
   "ci": {
     "forge": "github",
     "packageManager": "bun"
-  }
+  },
+  "chrome": "ocx"
 }

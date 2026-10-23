@@ -1,0 +1,26 @@
+{
+  "siteUrl": "https://index.ocx.sh",
+  "chrome": "neutral",
+  "brand": {
+    "title": "OCX Index",
+    "wordmark": "index.ocx.sh"
+  },
+  "nav": [
+    {
+      "text": "github",
+      "link": "https://github.com/ocx-sh/index"
+    }
+  ],
+  "footer": {
+    "links": [
+      {
+        "text": "privacy",
+        "link": "/docs/privacy"
+      },
+      {
+        "text": "github",
+        "link": "https://github.com/ocx-sh/index"
+      }
+    ]
+  }
+}
