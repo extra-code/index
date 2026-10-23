@@ -497,6 +497,10 @@
     "12.15": {
       "content": "sha256:08346a7d058fe2e058445850daa965cda576ffe403d5f789339c3a5d136eb718",
       "observed": "2026-10-21T15:40:06Z"
+    },
+    "11.28.8": {
+      "content": "sha256:8886fd1bec89345b794e1e0044df4c816b1766d2d257aac51681aebca3cb701e",
+      "observed": "2026-10-23T00:57:34Z"
     }
   }
 }
