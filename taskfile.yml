@@ -22,8 +22,13 @@ includes:
     dir: ./bot-tools
 
 vars:
-  RENDER_OUT: site/.vitepress/dist
+  RENDER_OUT: dist
   RENDER_INDEX_DIR: ""
+  # Overrides catalog.config.json's siteUrl, and with it the catalog's
+  # `base`. Empty keeps https://ocx.sh/catalog/ (base /catalog/, the Bunny
+  # deploy); render-deploy.yml sets https://index.ocx.sh (base /) for the
+  # Cloudflare Pages tree until index.ocx.sh's HTML paths redirect.
+  SITE_URL: '{{.SITE_URL | default ""}}'
   # Renderer switch: released npm package (default -- CI/deploys, always)
   # or the sibling checkout via CATALOG_DEV=1 (task CLI or .env.local; the
   # self-default pattern lets the env value through, a plain literal would
@@ -148,8 +153,9 @@ tasks:
       - bun install --frozen-lockfile
       - >-
         jq --arg path '{{if .RENDER_INDEX_DIR}}{{.RENDER_INDEX_DIR}}{{else}}.{{end}}'
-        '.sources[0].path = $path' catalog.config.json
-        > .catalog.config.render.json
+        --arg url '{{.SITE_URL}}'
+        '.sources[0].path = $path | if $url != "" then .siteUrl = $url else . end'
+        catalog.config.json > .catalog.config.render.json
       - '{{.CATALOG_BIN}} build --config .catalog.config.render.json --out {{.RENDER_OUT}}'
 
   render:build:
@@ -266,20 +272,18 @@ tasks:
 
   site:preview:
     desc: >-
-      `vitepress preview` against an already-built {{.RENDER_OUT}} tree
-      as-is (no rebuild) — VitePress's own default outDir convention
-      (`<root>/.vitepress/dist`) makes `site` the right root arg with no
-      `--outDir` override needed. Run `task render:build` (or `task
-      site:serve`, which chains both) first. Pre-kills any process already
-      bound to the preview port (4173) so re-running after a not-yet-exited
-      prior server doesn't fail with EADDRINUSE.
+      Static server for an already-built {{.RENDER_OUT}} tree, no rebuild.
+      The tree is mounted at /catalog/, the default `base`, so open
+      http://localhost:4173/catalog/. Run `task render:build` (or `task site:serve`) first. Pre-kills any
+      process on port 4173.
     cmds:
       - lsof -t -i:4173 | xargs -r kill
-      - ./node_modules/.bin/vitepress preview site --port 4173
+      - mkdir -p .preview && ln -sfn ../{{.RENDER_OUT}} .preview/catalog
+      - python3 -m http.server 4173 --bind 127.0.0.1 -d .preview
 
   site:serve:
     desc: >-
-      Local design review server: task render:build then bun run preview —
+      Local design review server: task render:build then site:preview —
       serves the exact production-shaped dist tree (incl. /p/** wire files,
       /c/index.json, /data/catalog/catalog.json) Cloudflare Pages would
       deploy, from the real committed p/ tree. `p/` is empty pre-seed (see

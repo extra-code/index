@@ -15,7 +15,7 @@ For an owner refreshing a package they already own, the whole flow is
 machine-to-machine: no human clicks anything between your release workflow
 pushing a tag and the index PR merging.
 
-## Prerequisite {#prerequisite}
+## Prerequisite
 
 Three things need to be true before your first announce:
 
@@ -31,7 +31,7 @@ Three things need to be true before your first announce:
 - A fork of `ocx-sh/index` exists under your account. If it doesn't yet, the
   `ocx` CLI creates one for you — see [Fork Auto-Create][fork-auto-create].
 
-## The `ocx` CLI Path {#the-ocx-cli-path}
+## The `ocx` CLI Path
 
 Announcing is a two-command handoff: `ocx package push` records what you just
 published, `ocx package announce` turns that record into a pull request.
@@ -82,7 +82,7 @@ grace marker on a tag row that's still present in the set. Yank is never set
 automatically, and `--refresh` never touches it — it's an owner decision a
 routine refresh can't accidentally trigger or clear (C7).
 
-## Copy-Paste GitHub Actions Snippet {#copy-paste-github-actions-snippet}
+## Copy-Paste GitHub Actions Snippet
 
 This block is meant to slot into an existing [GitHub Actions][gh-actions]
 release workflow, right after whatever step builds or downloads your
@@ -157,7 +157,7 @@ Every flag in that block matches the shipped binary (`ocx package push
 --help`, `ocx package announce --help`). Pin `setup-ocx` to a commit SHA from
 the [`ocx-sh/setup-ocx`][setup-ocx] README.
 
-## Classic PAT Setup {#classic-pat-setup}
+## Classic PAT Setup
 
 Fine-grained PATs cannot open pull requests against a public repository they
 don't own — a known [GitHub Actions][gh-actions] platform limitation, tracked
@@ -169,7 +169,7 @@ never writes it into the credential store it otherwise uses for registry
 auth (X6). See [Machine-Account Recommendation][machine-account] for who
 should hold that PAT.
 
-## Machine-Account Recommendation {#machine-account}
+## Machine-Account Recommendation
 
 Issue the classic PAT under a dedicated bot GitHub account rather than a
 person's own account — the same pattern OCX's own mirror fleet uses with its
@@ -177,7 +177,7 @@ person's own account — the same pattern OCX's own mirror fleet uses with its
 independent of who's currently on the team: nobody's departure revokes the
 token, and nobody's personal PAT-rotation habits silently break the pipeline.
 
-## Missing-Token Degrade {#missing-token-degrade}
+## Missing-Token Degrade
 
 The push-and-announce step in the snippet above is gated on the
 `OCX_ANNOUNCE_TOKEN` secret being non-empty (see its `if:` condition in the
@@ -189,7 +189,7 @@ missing variable, not a stack trace (C13). If you have no PR-capable token at
 all, see [No-Token Manual Fallback][no-token-fallback] — that's a different
 situation from this one.
 
-## No-Token Manual Fallback {#no-token-fallback}
+## No-Token Manual Fallback
 
 This is distinct from the [degrade above][missing-token-degrade]: it's for
 publishers who genuinely have no classic PAT or machine-account token
@@ -207,14 +207,14 @@ open the pull request yourself through GitHub's UI. It's the same shape as
 manifest to disk instead of submitting it — a local-write mode that hands the
 actual submission step back to the publisher.
 
-## Fork Auto-Create {#fork-auto-create}
+## Fork Auto-Create
 
 If `<your-account>/index` doesn't exist yet, `ocx package announce --fork`
 creates it — idempotently, so re-running the same command is safe — before it
 pushes anything. There's no separate "fork this repository" step to remember
 (C8); the first announce run does it for you.
 
-## The Reference Tool (`indexbot announce`) {#reference-tool}
+## The Reference Tool (`indexbot announce`)
 
 This is an aside, not the primary path — most publishers should use
 [the `ocx` CLI][the-ocx-cli-path] above. `indexbot announce`, the Python tool
@@ -224,7 +224,7 @@ set is the ground truth `ocx package announce` has to match (FP-9). It's
 handy for local dry-run debugging via its own `--out <dir>` local-write mode,
 but it isn't required for ordinary publishing.
 
-## PR and Auto-Merge Semantics {#pr-and-auto-merge-semantics}
+## PR and Auto-Merge Semantics
 
 An announce PR is classified into one of two lanes (see
 [Governance Contracts][governance-contracts]):
@@ -244,7 +244,7 @@ An announce PR is classified into one of two lanes (see
   review-request comment, and wait for approval — no matter how green the
   automated checks are (FP-6).
 
-## Future {#future}
+## Future
 
 ::: details Future
 `ocx dist`, a planned cargo-dist-style workflow renderer, will eventually
@@ -261,7 +261,7 @@ part of this flow yet — see [ocx-sh/ocx#199][ocx-199] and
 [#203][ocx-203].
 :::
 
-## See Also {#see-also}
+## See Also
 
 - [Claim a Namespace][claim-a-namespace] — the one-time step before your
   first announce

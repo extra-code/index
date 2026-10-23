@@ -1,7 +1,0 @@
-# `site/` no longer builds on its own (plan_catalog_extraction WP-11) —
-# `ocx-catalog build`/`dev` (invoked from the repo root, root
-# `catalog.config.json`) is what produces this tree. Kept here because
-# `taskfile.yml`'s render:build/render-deploy.yml still write and deploy
-# this exact path (RENDER_OUT).
-.vitepress/dist/
-node_modules/

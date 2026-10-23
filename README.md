@@ -26,14 +26,16 @@ Published shapes and field semantics are a one-way door once OCX clients bake
 the endpoint in: additive changes only, `format_version` gates the rest. See
 [`.claude/artifacts/`](.claude/artifacts/) for the design record (ADRs,
 decision log) and [product-context.md](.claude/rules/product-context.md) for
-the full contract. Human-facing docs land at `index.ocx.sh/docs` (incoming,
-built with [VitePress](https://vitepress.dev/)).
+the full contract. The catalog and its docs live at
+[ocx.sh/catalog](https://ocx.sh/catalog/), built with
+[`@ocx-sh/catalog`](https://github.com/ocx-sh/catalog).
 
 ## Repo state
 
 `.github/workflows/render-deploy.yml` renders `p/` (via `indexbot render` +
-the VitePress build) into `site/.vitepress/dist` and deploys that tree to
+`ocx-catalog build`) into `dist/` and deploys that tree to
 [Cloudflare Pages](https://pages.cloudflare.com/), serving `index.ocx.sh`.
+A second build with base `/catalog/` goes to Bunny, serving `ocx.sh/catalog/`.
 This replaces the earlier `public/` placeholder and `deploy.yml`, both
 retired. `p/` is still empty pending Phase 4 seed data, so the deployed
 index currently exposes `config.json` only.

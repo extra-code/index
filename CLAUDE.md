@@ -46,8 +46,9 @@ projection.
 Execution of `plan_index_v1` is underway. Phase 3 (WP3-A) has landed: the
 render pipeline is live. `.github/workflows/render-deploy.yml` runs
 `task render:build` (`site:build` then `indexbot render --out`, fixed
-order — see `taskfile.yml`) and deploys `site/.vitepress/dist` to
-Cloudflare Pages, replacing the retired `public/config.json` + `index.html`
+order — see `taskfile.yml`) and deploys `dist/` to
+Cloudflare Pages (index.ocx.sh, base `/`) and a `/catalog/`-based build to
+Bunny (ocx.sh/catalog/), replacing the retired `public/config.json` + `index.html`
 placeholder and `deploy.yml`. Self-activating custom domains (`index.ocx.sh`
 canonical, `index.ocx.rs` legacy bootstrap) carried over verbatim into the
 new workflow.
@@ -136,10 +137,10 @@ confuse the two when reasoning about what ships.
 | `bot-tools/` | Pins the released [`ocx-indexbot`](https://pypi.org/p/ocx-indexbot) (`bot-tools/uv.lock`, hash-locked) + `tests/security/` — this deployment's own governance assertions, the half that could not travel with the package. `task bot:test \| bot:workflows \| bot:audit` |
 | `.github/index-policy.json` | This deployment's own identity and policy — `name`, `name_segments`, the G-03 registry allowlist, `reserved_namespaces`, `governance.auto_merge`, and the `ci` block `indexbot ci` renders workflows from. A committed file, never a settings-page variable |
 | `catalog.config.json` | `@ocx-sh/catalog` config — sources, brand, nav, docs/publicDir mounts, siteUrl, and the `ci` block that renders `catalog-ci.yml` (plan_catalog_extraction WP-11). Install-command strings are NOT config: the `ocx` subcommand names are fixed, so they live in the package as `DEFAULT_INSTALL_FLAVORS` |
-| `package.json` | `@ocx-sh/catalog: ^0.1.0` (npm) + its `vitepress`/`vue` peers |
+| `package.json` | `@ocx-sh/catalog: ^0.6.0` (npm) |
 | `site/` | Consumer content only — `docs/` (hand-authored Markdown, mounted via `catalog.config.json`'s `docs`) and `public/` (favicon, via `publicDir`); the catalog/docs theme itself now lives in `@ocx-sh/catalog` |
 | `p/` | Package roots (`p/<ns>/<pkg>.json`) + package-local CAS OCI image indices (`p/<ns>/<pkg>/o/sha256/<hex>.json`) — empty until Phase 4 seed data lands |
-| `.github/workflows/render-deploy.yml` | Renders `p/` via `task render:build`, deploys `site/.vitepress/dist` to Pages + domain/DNS self-activation (replaces retired `deploy.yml`) |
+| `.github/workflows/render-deploy.yml` | Renders `p/` via `task render:build`, deploys `dist/` to Pages + Bunny (ocx.sh/catalog/) + domain/DNS self-activation (replaces retired `deploy.yml`) |
 | `.github/workflows/catalog-ci.yml` | **Generated** by `ocx-catalog ci` from `catalog.config.json`'s `ci` block — never hand-edit; its `verify-catalog-ci` job is the drift gate |
 | `.github/workflows/{validate,governance,reconcile,pr-checks-label,stale}.yml` | **Generated** by `indexbot ci` from `.github/index-policy.json` — never hand-edit; `ci.yml`'s `verify-indexbot-ci` job (`task bot:ci:check`) is the drift gate |
 | `.claude/artifacts/` | Handover, ADR, design spec, research (ported from ocx + Phase-0 additions) |
