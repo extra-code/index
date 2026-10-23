@@ -4,7 +4,7 @@ IFS=$'\n\t'
 
 # golden-baseline.sh — golden-baseline machinery for the upcoming
 # catalog-package extraction's identity gate: freezes a sha256 manifest of
-# the normalized site/.vitepress/dist tree the render pipeline produces
+# the normalized dist tree the render pipeline produces
 # from the gitignored demo/ fixture set, so a later package-built dist can
 # be diffed against a known-good reference.
 #
@@ -64,8 +64,8 @@ REPO_ROOT=$(cd "${SCRIPT_DIR}/.." && pwd)
 readonly SCRIPT_DIR REPO_ROOT
 cd "$REPO_ROOT"
 
-readonly DIST_DIR="${REPO_ROOT}/site/.vitepress/dist"
-readonly DIST_LABEL="site/.vitepress/dist"
+readonly DIST_DIR="${REPO_ROOT}/dist"
+readonly DIST_LABEL="dist"
 readonly GOLDEN_DIR="${REPO_ROOT}/.golden-baseline"
 readonly MANIFEST_FILE="${REPO_ROOT}/scripts/golden-baseline.manifest"
 readonly EXIT_DIFF=65
@@ -165,7 +165,7 @@ is_expected_extra_path() {
   is_index_mirror_path "$1"
 }
 
-# Sorted "sha256  site/.vitepress/dist/<relpath>" lines for every file
+# Sorted "sha256  dist/<relpath>" lines for every file
 # under $1 (the normalized copy).
 compute_manifest() {
   local src_dir="$1"

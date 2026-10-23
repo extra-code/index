@@ -10,7 +10,7 @@
     "title": "OCX Index",
     "wordmark": "index.ocx.sh"
   },
-  "siteUrl": "https://index.ocx.sh",
+  "siteUrl": "https://ocx.sh/catalog/",
   "description": "Package catalog and wire-format docs for the OCX public index (index.ocx.sh).",
   "favicon": "/favicon.svg",
   "nav": [

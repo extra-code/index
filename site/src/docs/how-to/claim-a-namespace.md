@@ -41,7 +41,7 @@ are bot-regenerated fields; a claim PR that also wants an initial tag set
 populated should let an announce (or `seed-import`, for batch seeding) do
 that work, not encode digests by hand.
 
-### Multi-Owner Support {#multi-owner-support}
+### Multi-Owner Support
 
 `owners[]` accepts more than one `{github, github_id}` pair. Every listed
 owner independently satisfies the machine-lane authorization check on that

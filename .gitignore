@@ -16,8 +16,7 @@ __pycache__/
 /demo/
 /.golden-baseline/
 /node_modules/
-# Stray `ocx-catalog build` output when run without --out (the real build
-# goes to site/.vitepress/dist -- see taskfile.yml RENDER_OUT).
+# Build output (taskfile.yml RENDER_OUT, also `ocx-catalog build`'s default).
 /dist/
 # Generated per-build source-path override (RENDER_INDEX_DIR demo switch —
 # see taskfile.yml site:build/site:dev).
@@ -28,3 +27,5 @@ __pycache__/
 # Ephemeral agent worktrees — never tracked, keep `git status` clean.
 .agents/worktrees/
 .claude/worktrees/
+# site:preview's /catalog/ mount of dist/.
+/.preview/

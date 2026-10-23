@@ -44,8 +44,9 @@ itself, and package logos are stored in this index's own content store
 rather than hot-linked from a registry.
 
 The site remembers display choices you make, in your browser's local
-storage: `vitepress-theme-appearance` (light/dark), `ocx-catalog-view`
-(cards/table) and `ocx-catalog-sort` (sort order). They stay on your
+storage: `starlight-theme` (light/dark), `ocx-catalog-view`
+(cards/table), `ocx-catalog-sort` (sort order) and `ocx-install-pin`
+(how precisely install commands pin a version). They stay on your
 device, are never transmitted anywhere, and hold no identifier. Clearing
 your browser's site data removes them.
 
