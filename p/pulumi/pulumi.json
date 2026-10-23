@@ -272,6 +272,10 @@
     "3.271": {
       "content": "sha256:510331b2cbf8bf88ce1afa7463cc1fcaa2c90c3d56ef9fd0f366f5779bf5d3c2",
       "observed": "2026-10-21T20:40:10Z"
+    },
+    "3.272.0_20261023": {
+      "content": "sha256:d382976e0a73f618049ba43c643493aaf7f4d559a424f103461ac077cafcece9",
+      "observed": "2026-10-23T01:30:37Z"
     }
   }
 }
