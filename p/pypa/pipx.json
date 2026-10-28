@@ -46,12 +46,12 @@
       "observed": "2026-10-23T08:22:56Z"
     },
     "1": {
-      "content": "sha256:2b83526f185d4706aea332fc67a7e52789de6299d288b863a16c5d85970740ce",
-      "observed": "2026-10-27T18:48:46Z"
+      "content": "sha256:2523484bcef8b544c0f91bc0bede1cb3bc50382ed351f1b8bf05e44a11d5c17b",
+      "observed": "2026-10-28T06:55:08Z"
     },
     "latest": {
-      "content": "sha256:2b83526f185d4706aea332fc67a7e52789de6299d288b863a16c5d85970740ce",
-      "observed": "2026-10-27T18:48:46Z"
+      "content": "sha256:2523484bcef8b544c0f91bc0bede1cb3bc50382ed351f1b8bf05e44a11d5c17b",
+      "observed": "2026-10-28T06:55:08Z"
     },
     "1.17.13_20261023": {
       "content": "sha256:bd9885f98be48dc3a1acedc8ee413d4806f82b8a4395c56fe0d1ad442ada28b2",
@@ -78,8 +78,8 @@
       "observed": "2026-10-23T08:22:56Z"
     },
     "1.18": {
-      "content": "sha256:2b83526f185d4706aea332fc67a7e52789de6299d288b863a16c5d85970740ce",
-      "observed": "2026-10-27T18:48:46Z"
+      "content": "sha256:2523484bcef8b544c0f91bc0bede1cb3bc50382ed351f1b8bf05e44a11d5c17b",
+      "observed": "2026-10-28T06:55:08Z"
     },
     "1.18.1_20261023": {
       "content": "sha256:2730f3ee068afb4ff8d322679070b5392c7a8feac57f5d9e4cf40b2f98529810",
@@ -276,6 +276,22 @@
     "1.18.5": {
       "content": "sha256:2b83526f185d4706aea332fc67a7e52789de6299d288b863a16c5d85970740ce",
       "observed": "2026-10-27T18:48:46Z"
+    },
+    "1.18.6_20261028": {
+      "content": "sha256:93784db6098717bedea5600f082b61ba1447075dc99381304303f5ddf9c69ada",
+      "observed": "2026-10-28T06:55:08Z"
+    },
+    "1.18.6": {
+      "content": "sha256:93784db6098717bedea5600f082b61ba1447075dc99381304303f5ddf9c69ada",
+      "observed": "2026-10-28T06:55:08Z"
+    },
+    "1.18.7_20261028": {
+      "content": "sha256:2523484bcef8b544c0f91bc0bede1cb3bc50382ed351f1b8bf05e44a11d5c17b",
+      "observed": "2026-10-28T06:55:08Z"
+    },
+    "1.18.7": {
+      "content": "sha256:2523484bcef8b544c0f91bc0bede1cb3bc50382ed351f1b8bf05e44a11d5c17b",
+      "observed": "2026-10-28T06:55:08Z"
     }
   }
 }
