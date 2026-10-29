@@ -45,8 +45,8 @@
       "observed": "2026-08-04T07:22:42Z"
     },
     "1.12": {
-      "content": "sha256:9848187c33aa49dc104afce31eb94ccb9b987067e4cae114e5aae8979a073614",
-      "observed": "2026-10-21T14:36:46Z"
+      "content": "sha256:d4eaef3de128ed6a1126db7bdb6f9f8059903acb7278b6d3dec7df2a8ff4cca3",
+      "observed": "2026-10-29T20:34:21Z"
     },
     "1": {
       "content": "sha256:e238400f5fb67935be9bc06087123ea9752c22101a02ca6134d0939ffcfe9789",
@@ -371,6 +371,14 @@
     "1.13.2": {
       "content": "sha256:e238400f5fb67935be9bc06087123ea9752c22101a02ca6134d0939ffcfe9789",
       "observed": "2026-10-21T19:29:42Z"
+    },
+    "1.12.11_20261029": {
+      "content": "sha256:d4eaef3de128ed6a1126db7bdb6f9f8059903acb7278b6d3dec7df2a8ff4cca3",
+      "observed": "2026-10-29T20:34:21Z"
+    },
+    "1.12.11": {
+      "content": "sha256:d4eaef3de128ed6a1126db7bdb6f9f8059903acb7278b6d3dec7df2a8ff4cca3",
+      "observed": "2026-10-29T20:34:21Z"
     }
   }
 }
