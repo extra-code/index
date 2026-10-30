@@ -602,12 +602,16 @@
       "observed": "2026-10-29T23:53:35Z"
     },
     "2.2.3_20261030": {
-      "content": "sha256:5b316a821206e0ad1d9218965e9848bf268c09c3e20d3f4d3e4028ccbbc7dc07",
-      "observed": "2026-10-30T19:14:15Z"
+      "content": "sha256:8b3dce03396d0c903b293eee0976adb6c9fcdc88d314f513bfcc44bb0c77d66c",
+      "observed": "2026-10-30T23:34:14Z"
     },
     "2.2.4_20261030": {
-      "content": "sha256:1e369d01e485bd593ad09fdbfbecc88383ad36762f7c6b513826b5900c4a5315",
-      "observed": "2026-10-30T19:14:15Z"
+      "content": "sha256:b39d56a42ef4ee29ab4b46780b1c9cd1a4652219cb12dae78a802c1264b4c7e9",
+      "observed": "2026-10-30T23:34:14Z"
+    },
+    "2.2.5_20261030": {
+      "content": "sha256:8cbcd67ad21c433a373ee4b7ce69b9b8f87b87d63910a4df4b3fef13b8199ddc",
+      "observed": "2026-10-30T23:34:14Z"
     }
   }
 }
