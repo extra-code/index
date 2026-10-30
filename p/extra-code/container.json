@@ -29,5 +29,31 @@
     "repository_url": "https://github.com/apple/container",
     "disclaimer": "Patched build of apple/container for Parbake. Temporary until upstream ships the patches."
   },
-  "tags": {}
+  "tags": {
+    "1.6.1_01": {
+      "content": "sha256:ebc2114ab7752aca3c67b865908e5ec3a2dee0d5081634c46c67878ab705d367",
+      "observed": "2026-10-30T08:34:50Z",
+      "ephemeral": true
+    },
+    "1.6.1": {
+      "content": "sha256:ebc2114ab7752aca3c67b865908e5ec3a2dee0d5081634c46c67878ab705d367",
+      "observed": "2026-10-30T08:34:50Z",
+      "ephemeral": true
+    },
+    "1.6": {
+      "content": "sha256:ebc2114ab7752aca3c67b865908e5ec3a2dee0d5081634c46c67878ab705d367",
+      "observed": "2026-10-30T08:34:50Z",
+      "ephemeral": true
+    },
+    "1": {
+      "content": "sha256:ebc2114ab7752aca3c67b865908e5ec3a2dee0d5081634c46c67878ab705d367",
+      "observed": "2026-10-30T08:34:50Z",
+      "ephemeral": true
+    },
+    "latest": {
+      "content": "sha256:ebc2114ab7752aca3c67b865908e5ec3a2dee0d5081634c46c67878ab705d367",
+      "observed": "2026-10-30T08:34:50Z",
+      "ephemeral": true
+    }
+  }
 }
