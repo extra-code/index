@@ -24,5 +24,22 @@
     "readme": "sha256:76abc3b5037d28a680ac642c5d380a3d02b227b35e608154bd21ec9ebb9708d2",
     "logo": "sha256:789b9545720883ec1528a4c9beb8caa605030f0d40d9b2d28c41a79956bb6601"
   },
-  "tags": {}
+  "tags": {
+    "0.1.0": {
+      "content": "sha256:f96b7ed8ec6f3feff198d259e4dd5565eb731f579681198577a967723fb9899a",
+      "observed": "2026-10-30T07:32:31Z"
+    },
+    "0.1": {
+      "content": "sha256:f96b7ed8ec6f3feff198d259e4dd5565eb731f579681198577a967723fb9899a",
+      "observed": "2026-10-30T07:32:31Z"
+    },
+    "0": {
+      "content": "sha256:f96b7ed8ec6f3feff198d259e4dd5565eb731f579681198577a967723fb9899a",
+      "observed": "2026-10-30T07:32:31Z"
+    },
+    "latest": {
+      "content": "sha256:f96b7ed8ec6f3feff198d259e4dd5565eb731f579681198577a967723fb9899a",
+      "observed": "2026-10-30T07:32:31Z"
+    }
+  }
 }
