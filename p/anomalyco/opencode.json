@@ -602,12 +602,12 @@
       "observed": "2026-10-29T23:53:35Z"
     },
     "2.2.3_20261030": {
-      "content": "sha256:95041df5bea90ce6663a905f4c5167499940ae0589a31e32538cb26598d7fea5",
-      "observed": "2026-10-30T19:06:30Z"
+      "content": "sha256:5b316a821206e0ad1d9218965e9848bf268c09c3e20d3f4d3e4028ccbbc7dc07",
+      "observed": "2026-10-30T19:14:15Z"
     },
     "2.2.4_20261030": {
-      "content": "sha256:d534e7657076d44bea0897d7f24d887680e1eb61959c37806368c692885e0b6b",
-      "observed": "2026-10-30T19:06:30Z"
+      "content": "sha256:1e369d01e485bd593ad09fdbfbecc88383ad36762f7c6b513826b5900c4a5315",
+      "observed": "2026-10-30T19:14:15Z"
     }
   }
 }
