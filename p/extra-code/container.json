@@ -11,7 +11,7 @@
   "deprecated_message": null,
   "created": "2026-10-30",
   "desc": {
-    "digest": "sha256:503d3e2a1261ae562a353fcc515018a4381813be0b3a09ac55159fec6ab552f0",
+    "digest": "sha256:55f77c7aedcfd8cba1f590407765f68c0d2fb85e51e3e1b15f9f9ba8f0183f04",
     "title": "container (patched for Parbake)",
     "description": "Temporary patched build of Apple container that runs the Parbake macOS runtime.",
     "keywords": [
@@ -21,7 +21,7 @@
       "apple-silicon",
       "parbake"
     ],
-    "readme": "sha256:996ffce7aa74d4bc40a640b2103a071a337f6f17c7afa55388202b4608f92782",
+    "readme": "sha256:3c74a76569d3ed1d0f9bc18e613febcc93e1a981ed7e93533da03c25527c92bf",
     "logo": "sha256:c313c92310677dba2046f76b03499859d96a5e320e382dc7fd0322fd27b8293d"
   },
   "upstream": {
