@@ -1,0 +1,15 @@
+{
+  "name": "ocx.sh/extra-code/container-ci",
+  "repository": "oci://ghcr.io/extra-code/container-ci",
+  "owners": [
+    {
+      "login": "extra-code",
+      "id": 54680436
+    }
+  ],
+  "status": "active",
+  "deprecated_message": null,
+  "created": "2026-11-16",
+  "desc": null,
+  "tags": {}
+}
