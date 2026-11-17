@@ -46,12 +46,12 @@
       "observed": "2026-10-23T08:22:56Z"
     },
     "1": {
-      "content": "sha256:06a34b44ccc3ea52930d92d8f03df136090f40aa15eae59179da6563d06f9067",
-      "observed": "2026-11-07T14:05:25Z"
+      "content": "sha256:35cbe7157ea061c23b83db050a659d2195de432b168794e71b81a0b29e116886",
+      "observed": "2026-11-17T09:17:14Z"
     },
     "latest": {
-      "content": "sha256:06a34b44ccc3ea52930d92d8f03df136090f40aa15eae59179da6563d06f9067",
-      "observed": "2026-11-07T14:05:25Z"
+      "content": "sha256:35cbe7157ea061c23b83db050a659d2195de432b168794e71b81a0b29e116886",
+      "observed": "2026-11-17T09:17:14Z"
     },
     "1.17.13_20261023": {
       "content": "sha256:bd9885f98be48dc3a1acedc8ee413d4806f82b8a4395c56fe0d1ad442ada28b2",
@@ -78,8 +78,8 @@
       "observed": "2026-10-23T08:22:56Z"
     },
     "1.18": {
-      "content": "sha256:06a34b44ccc3ea52930d92d8f03df136090f40aa15eae59179da6563d06f9067",
-      "observed": "2026-11-07T14:05:25Z"
+      "content": "sha256:35cbe7157ea061c23b83db050a659d2195de432b168794e71b81a0b29e116886",
+      "observed": "2026-11-17T09:17:14Z"
     },
     "1.18.1_20261023": {
       "content": "sha256:2730f3ee068afb4ff8d322679070b5392c7a8feac57f5d9e4cf40b2f98529810",
@@ -356,6 +356,22 @@
     "1.18.16": {
       "content": "sha256:06a34b44ccc3ea52930d92d8f03df136090f40aa15eae59179da6563d06f9067",
       "observed": "2026-11-07T14:05:25Z"
+    },
+    "1.18.17_20261117": {
+      "content": "sha256:13b1dc463555508bedfd83d91d4a7b4c97212b9dbf331b8f2ae93a50e8ed94b6",
+      "observed": "2026-11-17T09:17:14Z"
+    },
+    "1.18.17": {
+      "content": "sha256:13b1dc463555508bedfd83d91d4a7b4c97212b9dbf331b8f2ae93a50e8ed94b6",
+      "observed": "2026-11-17T09:17:14Z"
+    },
+    "1.18.18_20261117": {
+      "content": "sha256:35cbe7157ea061c23b83db050a659d2195de432b168794e71b81a0b29e116886",
+      "observed": "2026-11-17T09:17:14Z"
+    },
+    "1.18.18": {
+      "content": "sha256:35cbe7157ea061c23b83db050a659d2195de432b168794e71b81a0b29e116886",
+      "observed": "2026-11-17T09:17:14Z"
     }
   }
 }
