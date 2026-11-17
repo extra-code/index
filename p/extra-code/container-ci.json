@@ -10,11 +10,37 @@
   "status": "active",
   "deprecated_message": null,
   "created": "2026-11-16",
-  "desc": null,
+  "desc": {
+    "digest": "sha256:0d44d902d224c027f2bf9f5a704cbf2345caea49da29d01998fc3e5b9bd59d9d",
+    "title": "container-ci",
+    "description": "GitLab Runner custom executor that runs each CI job in its own Apple container on a Mac.",
+    "keywords": [
+      "gitlab",
+      "ci",
+      "custom-executor",
+      "container",
+      "apple-silicon",
+      "macos"
+    ],
+    "readme": "sha256:551cd16ec1abbda410611aa4765396d726f3414af24949344c78455f555c460f",
+    "logo": "sha256:fc70c5ed05d684c0f8eea828d43ac62593f243bb0d8c2aa5808fd60458be3ba4"
+  },
   "tags": {
     "0.1.0": {
       "content": "sha256:066a0b3f61a49fb0f9082f02de56042621c4046ca54353c55588379ac5b1c781",
       "observed": "2026-11-17T18:24:19Z"
+    },
+    "0.1": {
+      "content": "sha256:066a0b3f61a49fb0f9082f02de56042621c4046ca54353c55588379ac5b1c781",
+      "observed": "2026-11-17T19:09:24Z"
+    },
+    "0": {
+      "content": "sha256:066a0b3f61a49fb0f9082f02de56042621c4046ca54353c55588379ac5b1c781",
+      "observed": "2026-11-17T19:09:24Z"
+    },
+    "latest": {
+      "content": "sha256:066a0b3f61a49fb0f9082f02de56042621c4046ca54353c55588379ac5b1c781",
+      "observed": "2026-11-17T19:09:24Z"
     }
   }
 }
